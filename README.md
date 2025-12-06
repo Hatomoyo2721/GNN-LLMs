@@ -85,8 +85,8 @@ nhưng SHAP Feature Importance lại *không hề giống nhau*.
 
 ### Nhận xét nhanh:
 
-- RF đánh giá **worst concave points** cực kỳ quan trọng  
-- Logistic Regression lại coi trọng **mean perimeter**, **area**, **radius error**  
+- Random Forest (RF) đánh giá **worst concave points** cực kỳ quan trọng  
+- Logistic Regression (LR) lại coi trọng **mean perimeter**, **area**, **radius error**  
 - Cả hai đều "đúng", nhưng chúng *giải thích theo hai cách khác nhau*  
 
 **→ Đây là bằng chứng trực quan về X-Hacking.**
@@ -98,3 +98,9 @@ nhưng SHAP Feature Importance lại *không hề giống nhau*.
 ### 1️⃣ Cài đặt thư viện
 ```bash
 pip install shap scikit-learn pandas matplotlib
+```
+
+### 2️⃣ Chạy file
+```bash
+python demo_xhacking.py
+```
