@@ -7,10 +7,12 @@
   <img src="https://img.shields.io/badge/ML-RandomForest%20%7C%20LogReg-orange"/>
   <img src="https://img.shields.io/badge/Status-Active-brightgreen"/>
 </p>
+
 <br>
 
 <div id="toc">
-<h2>📌 Mục lục </h2>
+
+## 📌 Mục lục
 
 - [✨ Giới thiệu](#gioithieu)
 - [🧠 Tương tác GNNs × LLMs](#gnnllm)
@@ -18,9 +20,10 @@
 - [🧪 Demo: Hiệu ứng Rashomon](#demo)
 - [📊 So sánh SHAP](#shap)
 - [🚀 Run](#run)
-</div>
----
 
+</div>
+
+---
 
 <h2 id="gioithieu">✨ Giới thiệu</h2>
 
@@ -32,8 +35,8 @@ Repository này minh họa:
 - Demo thực nghiệm với **2 mô hình accuracy tương đương nhưng giải thích khác nhau**
 
 Repo cung cấp mã Python + biểu đồ SHAP để quan sát rõ ràng hiện tượng này.
----
 
+---
 
 <h2 id="gnnllm">🧠 Tương tác GNNs × LLMs</h2>
 
@@ -45,8 +48,8 @@ Repo cung cấp mã Python + biểu đồ SHAP để quan sát rõ ràng hiện 
 ### GNNs ➜ Tăng độ chính xác cho LLMs  
 - 🔍 Giảm hallucination bằng Knowledge Graph  
 - 📖 Minh bạch hơn với reasoning paths qua đồ thị  
----
 
+---
 
 <h2 id="xhacking">⚠️ X-Hacking là gì?</h2>
 
@@ -54,24 +57,24 @@ Repo cung cấp mã Python + biểu đồ SHAP để quan sát rõ ràng hiện 
 
 > *Cố tình chọn mô hình có lời giải thích (SHAP) phù hợp với kết luận định sẵn, dù accuracy giữa các mô hình là như nhau.*
 
-<p>Điều này xảy ra do **hiệu ứng Rashomon**:
-→ Nhiều mô hình có **accuracy tương đương** nhưng **logic nội tại rất khác nhau**.</p>
+Điều này xảy ra do **hiệu ứng Rashomon**:  
+→ Nhiều mô hình có **accuracy tương đương** nhưng **logic nội tại rất khác nhau**.
+
 ---
 
-
-<h2 id="demo">Demo: Hiệu ứng Rashomon trong thực tế</h2>
+<h2 id="demo">🧪 Demo: Hiệu ứng Rashomon trong thực tế</h2>
 
 Dùng bộ dữ liệu **Breast Cancer** (Scikit-learn), huấn luyện 2 mô hình:
 
 - **Random Forest**  
 - **Logistic Regression**
 
-→ Cả hai đều đạt ~**96% accuracy**,  
+Cả hai đều đạt ~**96% accuracy**,  
 nhưng SHAP Feature Importance lại *không hề giống nhau*.
 
 Đây chính là cửa ngõ cho X-Hacking.
----
 
+---
 
 <h2 id="shap">📊 So sánh SHAP</h2>
 
@@ -85,12 +88,13 @@ nhưng SHAP Feature Importance lại *không hề giống nhau*.
 - RF đánh giá **worst concave points** cực kỳ quan trọng  
 - Logistic Regression lại coi trọng **mean perimeter**, **area**, **radius error**  
 - Cả hai đều "đúng", nhưng chúng *giải thích theo hai cách khác nhau*  
+
 **→ Đây là bằng chứng trực quan về X-Hacking.**
+
 ---
 
+<h2 id="run">🚀 Run</h2>
 
-<h2 id="run">Run</h2>
-
-### 1️⃣ Python 3.x và thư viện
+### 1️⃣ Cài đặt thư viện
 ```bash
 pip install shap scikit-learn pandas matplotlib
