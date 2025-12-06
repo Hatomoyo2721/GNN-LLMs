@@ -57,8 +57,7 @@ Repo cung cấp mã Python + biểu đồ SHAP để quan sát rõ ràng hiện 
 
 > *Cố tình chọn mô hình có lời giải thích (SHAP) phù hợp với kết luận định sẵn, dù accuracy giữa các mô hình là như nhau.*
 
-Điều này xảy ra do **hiệu ứng Rashomon**:  
-→ Nhiều mô hình có **accuracy tương đương** nhưng **logic nội tại rất khác nhau**.
+Điều này xảy ra do **hiệu ứng Rashomon** - Nhiều mô hình có **accuracy tương đương** nhưng **logic nội tại rất khác nhau**.
 
 ---
 
@@ -69,10 +68,7 @@ Dùng bộ dữ liệu **Breast Cancer** (Scikit-learn), huấn luyện 2 mô h�
 - **Random Forest**  
 - **Logistic Regression**
 
-Cả hai đều đạt ~**96% accuracy**,  
-nhưng SHAP Feature Importance lại *không hề giống nhau*.
-
-Đây chính là cửa ngõ cho X-Hacking.
+Cả hai đều đạt ~**96% accuracy**, nhưng SHAP Feature Importance lại *không hề giống nhau* → Chìa khoá cho X-Hacking.
 
 ---
 
@@ -89,7 +85,7 @@ nhưng SHAP Feature Importance lại *không hề giống nhau*.
 - Logistic Regression (LR) lại coi trọng **mean perimeter**, **area**, **radius error**  
 - Cả hai đều "đúng", nhưng chúng *giải thích theo hai cách khác nhau*  
 
-**→ Đây là bằng chứng trực quan về X-Hacking.**
+**→ Bằng chứng trực quan về X-Hacking.**
 
 ---
 
