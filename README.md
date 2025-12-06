@@ -91,6 +91,16 @@ Cả hai đều đạt ~**96% accuracy**, nhưng SHAP Feature Importance lại *
 
 ---
 
+### 📌 Top 5 đặc trưng quan trọng nhất (tổng hợp)
+
+<p align="center">
+  <img src="/images/Top 5 features.png" width="70%">
+</p>
+
+Biểu đồ này tổng hợp **mức độ quan trọng SHAP** của 5 đặc trưng đứng đầu cho cả hai mô hình, giúp dễ so sánh trực quan từng feature.
+
+---
+
 <h2 id="run">🚀 Run</h2>
 
 ### 1️⃣ Cài đặt thư viện
