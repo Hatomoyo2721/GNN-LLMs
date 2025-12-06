@@ -1,8 +1,4 @@
-<p align="center">
-  <a href="#vietnamese"><b>🇻🇳 Vietnamese</b></a> • 
-  <a href="#english"><b>🇺🇸 English</b></a>
-</p>
-
+Vietnamese | [English](README_EN.md)
 
 <h1 id="vietnamese" align="center">GNN–LLMs & X-Hacking Demo</h1>
 <h3 align="center">Tìm hiểu GNN, LLMs và rủi ro X-Hacking trong AutoML</h3>
