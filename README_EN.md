@@ -32,9 +32,9 @@
 This repository demonstrates:
 
 - How **Large Language Models (LLMs)** support **Graph Neural Networks (GNNs)**  
-  → improving feature representation, enabling auto-labeling, and boosting generalization  
+  → Improving feature representation, enabling auto-labeling, and boosting generalization  
 - How **GNNs support LLMs**  
-  → reducing hallucination through Knowledge Graphs, improving explainability  
+  → Reducing hallucination through Knowledge Graphs, improving explainability  
 - The risk of **X-Hacking** — intentionally selecting models with SHAP explanations that match a desired conclusion  
 - A practical demo showing **two ML models with similar accuracy but drastically different explanations**
 
@@ -61,8 +61,7 @@ The project includes Python code and SHAP visualizations to clearly illustrate t
 
 > *Intentionally selecting a machine learning model whose SHAP explanation supports a predefined narrative, even when other models achieve the same accuracy.*
 
-This occurs due to the **Rashomon Effect**:  
-→ Multiple models may achieve **equivalent accuracy** while using **completely different internal logic**.
+This occurs due to the **Rashomon Effect** - Multiple models may achieve **equivalent accuracy** while using **completely different internal logic**.
 
 ---
 
@@ -73,10 +72,7 @@ Using the **Breast Cancer Wisconsin dataset** (Scikit-Learn), we train two model
 - **Random Forest**  
 - **Logistic Regression**
 
-Both achieve approximately **96% accuracy**,  
-but their SHAP-based feature importance rankings differ significantly.
-
-This discrepancy forms the foundation for X-Hacking.
+Both achieve approximately **96% accuracy**, but their SHAP-based feature importance rankings differ significantly → This discrepancy forms the foundation for X-Hacking.
 
 ---
 
