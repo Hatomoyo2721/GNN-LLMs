@@ -10,7 +10,7 @@
 <br>
 
 <div id="toc">
-## 📌 Mục lục
+<h2>📌 Mục lục </h2>
 
 - [✨ Giới thiệu](#gioithieu)
 - [🧠 Tương tác GNNs × LLMs](#gnnllm)
