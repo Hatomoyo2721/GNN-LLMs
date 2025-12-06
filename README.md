@@ -54,8 +54,8 @@ Repo cung cấp mã Python + biểu đồ SHAP để quan sát rõ ràng hiện 
 
 > *Cố tình chọn mô hình có lời giải thích (SHAP) phù hợp với kết luận định sẵn, dù accuracy giữa các mô hình là như nhau.*
 
-Điều này xảy ra do **hiệu ứng Rashomon**:  
-→ Nhiều mô hình có **accuracy tương đương** nhưng **logic nội tại rất khác nhau**.
+<p>Điều này xảy ra do **hiệu ứng Rashomon**:
+→ Nhiều mô hình có **accuracy tương đương** nhưng **logic nội tại rất khác nhau**.</p>
 ---
 
 
@@ -85,8 +85,7 @@ nhưng SHAP Feature Importance lại *không hề giống nhau*.
 - RF đánh giá **worst concave points** cực kỳ quan trọng  
 - Logistic Regression lại coi trọng **mean perimeter**, **area**, **radius error**  
 - Cả hai đều "đúng", nhưng chúng *giải thích theo hai cách khác nhau*  
-
-➡️ Đây là bằng chứng trực quan về X-Hacking.
+**→ Đây là bằng chứng trực quan về X-Hacking.**
 ---
 
 
