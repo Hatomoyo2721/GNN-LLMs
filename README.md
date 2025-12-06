@@ -1,5 +1,5 @@
-<h1 align="center">🔮 GNN–LLMs & X-Hacking Demo</h1>
-<h3 align="center">Khám phá GNN, LLMs và rủi ro X-Hacking trong AutoML</h3>
+<h1 align="center">GNN–LLMs & X-Hacking Demo</h1>
+<h3 align="center">Tìm hiểu GNN, LLMs và rủi ro X-Hacking trong AutoML</h3>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.10-blue"/>
@@ -24,9 +24,7 @@
 - [⚠️ X-Hacking là gì?](#xhacking)
 - [🧪 Demo: Hiệu ứng Rashomon](#demo)
 - [📊 So sánh SHAP](#shap)
-- [🚀 Cách chạy code](#run)
-- [📁 Cấu trúc dự án](#structure)
-- [📚 Tài liệu tham khảo](#ref)
+- [🚀 Run](#run)
 
 </div>
 
@@ -52,7 +50,7 @@ Repo cung cấp mã Python + biểu đồ SHAP để quan sát rõ ràng hiện 
 - 🏷️ Gán nhãn + tăng cường dữ liệu (few-shot)  
 - 🧩 Giảm lỗi khi gặp dữ liệu phức tạp hoặc khác phân phối (OOD)  
 
-### GNNs ➜ Tăng sức mạnh cho LLMs  
+### GNNs ➜ Tăng độ chính xác cho LLMs  
 - 🔍 Giảm hallucination bằng Knowledge Graph  
 - 📖 Minh bạch hơn với reasoning paths qua đồ thị  
 
@@ -65,16 +63,16 @@ Repo cung cấp mã Python + biểu đồ SHAP để quan sát rõ ràng hiện 
 > *Cố tình chọn mô hình có lời giải thích (SHAP) phù hợp với kết luận định sẵn, dù accuracy giữa các mô hình là như nhau.*
 
 Điều này xảy ra do **hiệu ứng Rashomon**:  
-➡️ Nhiều mô hình có **accuracy tương đương** nhưng **logic nội tại rất khác nhau**.
+→ Nhiều mô hình có **accuracy tương đương** nhưng **logic nội tại rất khác nhau**.
 
 ---
 
-<h2 id="demo">🧪 Demo: Hiệu ứng Rashomon trong thực tế</h2>
+<h2 id="demo">Demo: Hiệu ứng Rashomon trong thực tế</h2>
 
 Dùng bộ dữ liệu **Breast Cancer** (Scikit-learn), huấn luyện 2 mô hình:
 
-- 🌲 **Random Forest**  
-- 🧮 **Logistic Regression**
+- **Random Forest**  
+- **Logistic Regression**
 
 → Cả hai đều đạt ~**96% accuracy**,  
 nhưng SHAP Feature Importance lại *không hề giống nhau*.
@@ -86,8 +84,8 @@ nhưng SHAP Feature Importance lại *không hề giống nhau*.
 <h2 id="shap">📊 So sánh SHAP</h2>
 
 <p align="center">
-  <img src="/results/shap_rf.png" width="45%">
-  <img src="/results/shap_lr.png" width="45%">
+  <img src="/images/SHAP_RF.png" width="45%">
+  <img src="/images/SHAP_LR.png" width="45%">
 </p>
 
 ### Nhận xét nhanh:
@@ -100,8 +98,8 @@ nhưng SHAP Feature Importance lại *không hề giống nhau*.
 
 ---
 
-<h2 id="run">🚀 Cách chạy code</h2>
+<h2 id="run">Run</h2>
 
-### 1️⃣ Cài thư viện
+### 1️⃣ Python 3.x và thư viện
 ```bash
-pip install -r requirements.txt
+pip install shap scikit-learn pandas matplotlib
