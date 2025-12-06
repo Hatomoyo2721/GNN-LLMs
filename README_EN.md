@@ -93,6 +93,16 @@ Both achieve approximately **96% accuracy**, but their SHAP-based feature import
 
 ---
 
+### 📌 Top 5 most important features (combined view)
+
+<p align="center">
+  <img src="/images/Top 5 features.png" width="70%">
+</p>
+
+This chart visualizes the **top 5 SHAP-ranked features** for both models, making their differences easy to compare side-by-side.
+
+---
+
 <h2 id="en-run">🚀 Run</h2>
 
 ### 1️⃣ Install required libraries
